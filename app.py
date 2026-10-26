@@ -13,6 +13,22 @@ st.markdown("""
 .hint{background:#eef7fb;border-left:4px solid #1683a5;padding:.8rem 1rem;border-radius:8px;color:#24465b}
 div[data-testid="stMetric"]{background:white;border:1px solid #dbe8f0;padding:1rem;border-radius:14px}
 div.stButton>button{width:100%;border-radius:12px;height:3rem;font-weight:700}
+/* Fix faded input labels */
+div[data-testid="stWidgetLabel"] p,
+div[data-testid="stWidgetLabel"] label,
+.stSlider label,
+.stSelectbox label,
+.stNumberInput label {
+    color: #1f2937 !important;
+    font-weight: 600 !important;
+    opacity: 1 !important;
+}
+
+/* Make section headings visible */
+.stApp h2,
+.stApp h3 {
+    color: #1f2937 !important;
+}
 </style>
 """,unsafe_allow_html=True)
 
